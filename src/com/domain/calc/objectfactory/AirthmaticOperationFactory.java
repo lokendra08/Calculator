@@ -13,30 +13,30 @@ import com.domain.calc.service.impl.SubtractOperation;
 import com.domain.calc.validation.IValidationService;
 
 /**
- * handles object creation 
- * This is factory of classes implementing AirthmaticOperation.
+ * handles object creation This is factory of classes implementing
+ * AirthmaticOperation.
  */
-public class AirthmaticOperationFactory extends AbstractFactory{
-    
+public class AirthmaticOperationFactory extends AbstractFactory {
+
 	/**
-	* Returns an object implementing AirthmaticOperation based on passed operator.
-	* 
-	* @param operator   operator indication type of operator class
-	* @return AirthmaticOperation
-	*/
+	 * Returns an object implementing AirthmaticOperation based on passed operator.
+	 * 
+	 * @param operator operator indication type of operator class
+	 * @return AirthmaticOperation
+	 */
 	@Override
 	public AirthmaticOperation getAirthmaticOperation(Character operator) {
-		if(Objects.isNull(operator)) {
+		if (Objects.isNull(operator)) {
 			return null;
-		}else if(operator.equals(CalculatorConstants.ADDITION)) {
+		} else if (operator.equals(CalculatorConstants.ADDITION)) {
 			return new AddOperation();
-		}else if(operator.equals(CalculatorConstants.MULTIPLICATION)) {
+		} else if (operator.equals(CalculatorConstants.MULTIPLICATION)) {
 			return new MultiplyOperation();
-		}else if(operator.equals(CalculatorConstants.SUBTRACTION)) {
+		} else if (operator.equals(CalculatorConstants.SUBTRACTION)) {
 			return new SubtractOperation();
-		}else if(operator.equals(CalculatorConstants.DIVISION)) {
+		} else if (operator.equals(CalculatorConstants.DIVISION)) {
 			return new DivisionOperation();
-		}else {
+		} else {
 			return null;
 		}
 	}

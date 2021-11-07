@@ -49,7 +49,6 @@ public class Calculator {
 				System.out.println("Enter arithmatic expression Or Enter 'exit' to terminate the program : ");
 				CalculatorUtils.lineBreaks(1);
 				input = reader.readLine();
-				;
 				if (input.equals(CalculatorConstants.EXIT)) {
 					break;
 				}

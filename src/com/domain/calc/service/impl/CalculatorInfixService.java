@@ -56,7 +56,8 @@ public class CalculatorInfixService implements ICalculationService {
 	/**
 	 * Returns the result after computation.
 	 * 
-	 * @param characterArray characterArray holding all characters from input expression
+	 * @param characterArray characterArray holding all characters from input
+	 *                       expression
 	 * @return Double
 	 * @exception CalculatorOperandException
 	 */
@@ -103,7 +104,7 @@ public class CalculatorInfixService implements ICalculationService {
 		}
 		return values.pop();
 	}
-    
+
 	/**
 	 * Validates the input expression.
 	 * 
@@ -117,12 +118,12 @@ public class CalculatorInfixService implements ICalculationService {
 	}
 
 	/**
-	 * Returns the result after computation based on arithmetic operator.
-	 * create implementation object based on the operator provided from the factory.
+	 * Returns the result after computation based on arithmetic operator. create
+	 * implementation object based on the operator provided from the factory.
 	 * 
-	 * @param operator operator indicates arithmetic operator
+	 * @param operator     operator indicates arithmetic operator
 	 * @param secondNumber secondNumber indicating second operand
-	 * @param firstNumber firstNumber indicating first operand
+	 * @param firstNumber  firstNumber indicating first operand
 	 * @return Double
 	 * @exception CalculatorOperandException
 	 */
