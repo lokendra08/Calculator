@@ -1,5 +1,8 @@
 package com.domain.calc.run;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -39,12 +42,12 @@ public class Calculator {
 	*/
 	private static void run(){
 		String input;
-		try(Scanner scan = new Scanner(System.in)){		
+		try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){		
     	do {
     		CalculatorUtils.lineBreaks(1);
     		System.out.println("Enter arithmatic expression Or Enter 'exit' to terminate the program : "); 
     		CalculatorUtils.lineBreaks(1);
-            input = scan.next();
+            input = reader.readLine();;
             if(input.equals(CalculatorConstants.EXIT)) {
     			break;
     		}
@@ -62,7 +65,9 @@ public class Calculator {
 				System.out.println(CalculatorConstants.ERROR_MESSAGE);
 			} 
     	}while(true);
-	  }
+	  } catch (IOException e) {
+		e.printStackTrace();
+	}
    }
 
 	
