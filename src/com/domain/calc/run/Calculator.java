@@ -3,7 +3,6 @@ package com.domain.calc.run;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 import java.util.Stack;
 
 import com.domain.calc.constant.CalculatorConstants;

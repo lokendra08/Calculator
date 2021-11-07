@@ -4,7 +4,7 @@ import com.domain.calc.exception.CalculatorOperandException;
 import com.domain.calc.service.AirthmaticOperation;
 
 /**
- * Implementations class to peform subtraction operation
+ * Implementations class to perform subtraction operation
  */
 public class SubtractOperation extends AirthmaticOperation{
 	

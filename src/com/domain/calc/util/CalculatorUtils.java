@@ -51,7 +51,7 @@ public class CalculatorUtils {
 		}
 		
 	  /**
-		* Returns boolean indication whether inout us numeric or not including decimal numbers
+		* Returns boolean indication whether input is numeric or not including decimal numbers
 		* 
 		* @param strNum   strNum as input
 		* @return boolean
