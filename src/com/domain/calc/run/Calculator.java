@@ -73,10 +73,8 @@ public class Calculator {
 	}
 
 	/**
-	 * Takes user input from console as an string and invoke calculator service.
-	 * this method also remove white spaces if any present in the input expression.
-	 * this method also add 0 as prefix to the use input to handle infix expression
-	 * starting with minus sign
+	 * Invokes calculator service based on service implementation.
+	 * return object from object factory based on runtime service type.
 	 * 
 	 * @param input             user input expression as infix notation
 	 * @param values            stack to hold operands
